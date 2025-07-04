@@ -337,7 +337,7 @@ body.dark #add-phone {
   cursor: default;
 }
 
-/* Botón enviar centrado */
+/* Botón enviar*/
 .contact-section form {
   display: flex;
   flex-direction: column;

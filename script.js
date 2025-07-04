@@ -1,4 +1,4 @@
-  /*Java de cambio de modo claro/oscuro */
+  /*Cambio de modo claro/oscuro */
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('theme-toggle');
 
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const phonesContainer = document.getElementById('phones');
   const addPhoneBtn = document.getElementById('add-phone');
 
-  /*Validación al enviar y envio de formulario*/
+  /*Validacion al enviar y envio de formulario*/
   form.addEventListener('submit', e => {
     const errores = [];
     const nombre = document.getElementById('nombre').value.trim();
