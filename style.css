@@ -1,0 +1,363 @@
+
+/* Contenedor global del CV*/
+.contenedor-principal{
+    display: flex;
+}
+/*seccion del cuadrado azul*/
+.cuadrado-azul{
+    width: 600px;
+    height: auto;
+    background-color: #2c3b78;
+    padding:10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/*style de texto dentro del cuadro azul */
+.titulo-a{
+    margin-left: 10px;
+    color: white;       
+
+}
+/*linea pequeña blanca en el cuadro azul */
+.linea-pequeña{
+    width: 80%; 
+    height: 3px; 
+    background-color: white; 
+}
+/*style de la imagen de perfil que esta en el cuadro azul */
+.the-rock{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+/* contenedor parte donde no esta de azul*/
+.contenedor-b{
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+}
+/*organiza informacion fuera del lado azul */
+.info-blanco{
+    display:flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+/*style de la letra y configuraciones del texto */
+.titulo-b{
+    color: var(--text-main);
+    margin-left: 30px;  
+    text-align:justify; 
+
+}
+/* contenedor de las imagenes */
+.contenedor-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right:30px;
+    margin-left:30px;
+}
+/* styles del logo de sky */
+.sky{
+    width:180px;
+    height: auto;
+    position: absolute;
+    margin-top: 100px;
+}
+/* styles del logo de inacap */
+.inacap{
+    width: 180px;
+    height: auto;
+    margin-top: 160px;
+}
+/* styles del logo de usm */
+.usm{
+    width: 180px;
+    height: auto;
+    margin-top: 45px;
+}
+/* styles del logo de latam */
+.latam{
+    width: 180px;
+    height: auto;
+    margin-top: 280px;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: #ddd;
+}
+body.dark .cuadrado-azul {
+    background: #16223b;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+.top-bar h1 {
+    margin: center;
+    margin-left: 50%;
+}
+/* light/dark mode */
+:root {
+    --bg-page:     #ffffff;
+    --text-main:   #000000;
+    --accent-color:#2c3b78;
+}
+body {
+    margin: 0;
+    background: var(--bg-page);
+    color: var(--text-main);
+    transition: background 0.3s, color 0.3s;
+}
+.cuadrado-azul {
+    background-color: var(--accent-color);
+
+}
+/* Modos */
+body.dark {
+    --bg-page:     #1e1e1e;
+    --text-main:   #e0e0e0;
+    --accent-color:#16223b;
+    --text-main:   #e0e0e0;
+}
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    touch-action: manipulation;
+    transition: color 0.3s;
+}
+  /* boton-rgb */
+.button-85:before {
+    content: "cambiar el modo";
+    z-index: -2;
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.button-85:before {
+  z-index: -2; 
+}
+.button-85:after {
+  z-index: -1;  
+}
+
+/* sec de contacto*/
+.contact-section {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Agrupa cada label + input + botones */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Agrupa los inputs de teléfono */
+.phone-group {
+  display: flex;
+  align-items: center;
+}
+
+.phone-group input {
+  flex: 1;
+}
+
+.phone-group .remove-phone {
+  margin-left: 8px;
+  padding: 0 10px;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.phone-group .remove-phone:disabled {
+  background: #ccc;
+  cursor: default;
+}
+
+.phone-actions {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+#add-phone {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#add-phone:hover {
+  background: #1e8449;
+}
+
+/* Ajustes modo oscuro */
+body.dark .contact-section {
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+body.dark .form-group input {
+  background: #2e2e2e;
+  border-color: #555;
+  color: #ddd;
+}
+
+body.dark #add-phone {
+  background: #145a32;
+}
+
+
+/* Agrupación de teléfono + botón agregar */
+.phone-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+
+}
+.label-telefono {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  align-items: left;
+}
+
+/* Input del teléfono */
+.phone-group input[type="tel"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Botones agregar y eliminar */
+.add-phone,
+.remove-phone {
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  background-color: #2c3b78;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-phone:hover {
+  background-color: #1e2a57;
+}
+
+.remove-phone:disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+
+/* Botón enviar centrado */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section button[type="submit"] {
+  margin-top: 20px;
+}
+
+
+.contact-container {
+  background-color: rgba(44, 59, 120, 0.3); 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(4px); 
+}
+
+body.dark .contact-container {
+  background-color: rgba(54, 71, 109, 0.3);
+}
+

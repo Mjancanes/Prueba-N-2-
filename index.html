@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Curriculum</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+    <h1>Curriculum</h1>
+    <!-- Boton de cambiar modo-->
+    <button id= "theme-toggle" class="button-85" role="button">🌙Cambiar el modo</button>
+    </header>
+    <!--Contenedor principal agrupa todo lo de cv-->
+    <div class="contenedor-principal">
+        <!--seccion con el fondo azul -->
+        <div class="cuadrado-azul">
+            <img src="/img/cvdw.jpg" alt="rock" class="the-rock">
+            <!--bloque para los datos personales-->
+            <div class="titulo-a">    
+                <h2>Datos Personales</h2>
+                    <!--linea decorativa -->
+                    <div class="linea-pequeña"></div>
+                <ul>
+                    <li>Nombre: Misael Ancán</li>
+                    <li>Fecha de Nacimiento: 25/12/1999</li>
+                    <li>Ciudad: Santiago</li>
+                    <li>Estado civil: Soltero</li>
+                    <li>Correo: misael.ancan@correo.com</li>
+                    <li>Numero de contacto: +56988161131</li>
+                    <li>Licencia de conducir: clase B y C</li>
+                    <li>Licencia de DGAC: Mec.Ala Fija</li>
+                </ul>
+            </div>
+            <!--bloque para los datos "habilidades"-->
+            <div class="titulo-a">
+            <h2>Habilidades</h2>
+                <!--linea decorativa-->
+                <div class="linea-pequeña"></div>
+            <ul>
+                <li>Liderazgo</li>
+                <li>Trabajo en equipo</li>
+                <li>Toma de decisiones</li>
+                <li>Comunicacion asertiva</li>
+                <li>Resolucion de problemas</li>
+            </ul>
+            </div>
+        </div>
+        <!--contenedor para lo que esta fuera del fondo azul-->
+        <div class="contenedor-b">
+            <!--subcontenedor contiene informacion-->
+            <div class="info-blanco">
+                <!-- bloque para los "antecedentes laborales"-->
+                <div class="titulo-b">
+                    <h2>Antecedentes Laborales:</h2>
+                    <h3>Tecnico Aeronautico</h3>
+                    <ul>
+                        <li>Empresa: SkyAirline</li>
+                        <li>2023-Hasta la Actualidad</li>
+                    </ul>
+                    <p>Técnico aeronáutico especializado en mantenimiento, 
+                        inspección y reparación de aeronaves. Experiencia en diagnóstico de fallos,
+                        cumplimiento de normativas de seguridad y optimización del rendimiento de 
+                        sistemas aeronáuticos.
+                    </p>
+                </div>
+                <!-- bloque para los "antecedentes laborales"-->
+                <div class="titulo-b">
+                    <h3>Ayudante Aeronautico</h3>
+                    <ul>
+                        <li>Empresa: Seimtec</li>
+                        <a>Empresa contratista para LATAM Airline</a>
+                        <li>2022-2023</li>
+                    </ul>
+                    <p>Apoyo en el mantenimiento de sistemas electrónicos y
+                        de comunicación en aeronaves, asegurando su correcto funcionamiento
+                        y cumplimiento de normativas aeronáuticas. Asisto en diagnósticos, 
+                        pruebas y documentación técnica, colaborando con técnicos especializados 
+                        para garantizar la eficiencia y seguridad en el taller de aviónica.
+                    </p>
+                </div>
+                <!-- bloque para los "antecedentes academicos"-->
+                <div class="titulo-b">
+                    <h2>Antecedentes Academicos</h2>
+                    <h3>Ingenieria en Ciberseguridad</h3>
+                    <ul>
+                        <li>INACAP</li>
+                        <a>2024-En curso</a>
+                    </ul>
+                    <h3>Tecnico Universitario en Mantenimiento Aeronautico</h3>
+                    <ul>
+                        <li>Universidad Federico Santa Maria</li>
+                        <a>Titulado año 2022</a>
+                    </ul>
+                </div>
+                <!-- bloque para los "otros cursos y capacitaciones"-->
+                <div class="titulo-b">
+                    <h2>Otros Cursos y capacitaciones</h2>
+                    <p>
+                        Certificado de desarrollo de aplicaciones iniciales<br>
+                        Curso Ramp & Transit level II A320/A321 (LEAP-1A).<br>
+                        Curso mercancías peligrosas “D”.<br>
+                        Curso SMS nivel 6.<br>
+                        Curso de operaciones especiales.<br>
+                        Curso de Trabajos en altura.<br>
+                        Curo de conduccion de grua en Aeropuerto <br>
+                        Curso de Metrología.<br>
+                    </p>
+                    </ul>
+                </div>
+            </div>
+            <!-- contenedor de las imagenes-->
+            <!-- todas las imagenes estan en el mismo cotenedor -->
+            <div class="contenedor-img">
+                <img src="/img/sky.jpg" alt="logo sky" class="sky">
+                <img src="/img/latam.png" alt="logo latam" class="latam">
+                <img src="/img/inacap.jpg" alt="logo inacap" class="inacap">
+                <img src="/img/logo-usm.png" alt="logo usm" class="usm">
+            </div>
+        </div>
+   
+    </div>
+
+    <!--Contenedor del Formulario -->
+<section class="contact-section">
+    <div class="contact-container">
+    <h2>Contáctame</h2>
+    <form id="contact-form" novalidate>   
+    <div id="errores"></div>
+
+    <!-- Nombre -->
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required />
+    </div>
+
+    <!-- Apellido -->
+    <div class="form-group">
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" required />
+    </div>
+
+    <!-- Correo -->
+    <div class="form-group">
+      <label class="text-correo" for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required />
+    </div>
+
+    <!-- Telefonos -->
+    <div id="phones">
+      <div class="form-group phone-group">
+        <label class="label-telefono" for="telefonoo">Teléfono</label>
+        <input type="tel" name="telefono[]" required />
+        <button type="button" class="remove-phone" disabled>−</button>
+      </div>
+    </div>
+    <div class="phone-actions">
+      <button type="button" id="add-phone">＋ Agregar teléfonos</button>
+    </div>
+
+    <!-- Boton de Enviar -->
+    <button type="submit" class="button-85">Enviar</button>
+    </form>
+    </div>
+</section>
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
